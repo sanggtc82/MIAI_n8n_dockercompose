@@ -5,13 +5,7 @@ services:
     environment:
       - N8N_SECURE_COOKIE=false
       - GENERIC_TIMEZONE=Asia/Ho_Chi_Minh
-      - N8N_EDITOR_BASE_URL=https://auto.dichvuchukyso.com
-      - DB_TYPE=mysqldb
-      - DB_MYSQLDB_HOST=localhost
-      - DB_MYSQLDB_PORT=3306
-      - DB_MYSQLDB_DATABASE=n8n
-      - DB_MYSQLDB_USER=n8n
-      - DB_MYSQLDB_PASSWORD=fGMEWYPyz3cwtB6b
+      - N8N_EDITOR_BASE_URL=${EXTERNAL_IP}
     ports:
       - "5678:5678"
     volumes:
